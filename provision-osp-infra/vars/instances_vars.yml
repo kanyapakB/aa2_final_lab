@@ -1,0 +1,21 @@
+---
+instances:
+  - name: fontend1
+    keypair: 0e0c-keypair
+    image: rhel-8.3
+    flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
+    security_group: 0e0c-HostSG
+    internal_network: 0e0c-dev-network
+    metadata:
+      AnsibleGroup: osp_instances
+      deployment_name: dev
+
+  - name: appdb1
+    keypair: 0e0c-keypair
+    image: rhel-8.3
+    flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
+    security_group: 0e0c-HostSG
+    internal_network: 0e0c-dev-network
+    metadata:
+      AnsibleGroup: osp_instances
+      deployment_name: dev
